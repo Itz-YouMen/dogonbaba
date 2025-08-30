@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Site</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: skyblue;
+        }
+        img{
+            border-radius: 50%;
+        }
+        form{
+            background: white;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 10px;
+            width: 90%;
+        }
+        form input{
+            width: 90%;
+            height: 30px;
+            font-size: 15px;
+        }
+        form textarea{
+            width: 90%;
+            height: 100px;
+            max-width: 90%; max-height: 100px;
+            min-width: 90%; min-height: 100px;
+            font-size: 15px;
+        }
+        form button{
+            width: 130px;
+            height: 30px;
+            border: none;
+            background: rgb(36, 136, 230);
+            border-radius: 5px;
+        }
+        form input, textarea{
+            border: none;
+            outline: none;
+            box-shadow: 0 0 15px skyblue;
+        }
+    </style>
+    <link rel="icon" href="./developer.jpg">
+</head>
+<body>
+    <img src="developer.jpg" width="150" height="150" alt="">
+        <p>Itz Youmen</p>
+    <form id="form" action="mailto:jamilyusufktn.com" method="post" enctype="text/plain">
+        Send To Developer Email
+        <input type="text" placeholder="Name/Phone Number" required>
+        <textarea placeholder="Type your message" required></textarea>
+        <button>Send</button>
+    </form>
+    <p>phone: +2349067280310</p>
+</body>
+</html>
